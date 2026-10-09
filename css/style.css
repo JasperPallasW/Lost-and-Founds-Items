@@ -1,4 +1,4 @@
-/* Lost & Found Campus - main style file */
+/* Find Your Lost Items - main style file */
 
 /* ----- Our 2 main colors (change here if we choose other colors) ----- */
 :root {
@@ -55,4 +55,31 @@ main {
 .footer-lf {
   background-color: var(--main-color);
   color: white;
+}
+
+/* ----- Navbar: highlight the current page ----- */
+.navbar-lf .nav-link.active {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* ----- Page titles ----- */
+.page-title {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/* ----- Item cards (items page) ----- */
+.item-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.item-card img {
+  height: 180px;
+  object-fit: cover;
 }
